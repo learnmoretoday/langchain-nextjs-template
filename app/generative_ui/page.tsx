@@ -17,6 +17,7 @@ export default function GenerativeUIPage() {
   async function onSubmit(input: string) {
     const newElements = [...elements];
 
+    // test
     // execute the agent with user input and chat history
     const element = await actions.agent({ input, chat_history: history });
 
